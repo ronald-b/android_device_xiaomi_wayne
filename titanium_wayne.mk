@@ -28,9 +28,9 @@ $(call inherit-product, device/xiaomi/wayne/device.mk)
 $(call inherit-product, vendor/titanium/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-export WITH_GAPPS=true
-export TARGET_GAPPS_ARCH=arm64
-export IS_PHONE=true
+WITH_GAPPS=true
+TARGET_GAPPS_ARCH=arm64
+IS_PHONE=true
 TITANIUM_BUILD_TYPE := OFFICIAL
 
 
