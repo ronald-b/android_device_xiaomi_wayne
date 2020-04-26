@@ -24,11 +24,15 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
 # Inherit Carbon product configuration
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/titanium/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+export WITH_GAPPS=true
+export TARGET_GAPPS_ARCH=arm64
+export IS_PHONE=true
+TITANIUM_BUILD_TYPE := OFFICIAL
+
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -37,13 +41,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
 
-# CarbonRom Maintainer
+# Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carbon.maintainer="Rcstar6696"
+    ro.titanium.maintainer=Ronald
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := carbon_wayne
+PRODUCT_NAME := titanium_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
