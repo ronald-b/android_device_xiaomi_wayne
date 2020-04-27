@@ -33,7 +33,6 @@ TARGET_GAPPS_ARCH=arm64
 IS_PHONE=true
 TITANIUM_BUILD_TYPE := OFFICIAL
 
-
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
