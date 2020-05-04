@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2018 The Corvus-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,6 +28,8 @@ $(call inherit-product, device/xiaomi/wayne/device.mk)
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+USE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -38,7 +40,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # CarbonRom Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.du.maintainer=RonaldSt
+    ro.du.maintainer=Ronald
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
