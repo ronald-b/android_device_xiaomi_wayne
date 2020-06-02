@@ -25,7 +25,7 @@
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
 # Inherit some common Colt stuff.
-$(call inherit-product, vendor/colt/config/common.mk)
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
