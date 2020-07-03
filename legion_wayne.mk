@@ -24,11 +24,18 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
 # Inherit Carbon product configuration
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+
+ifeq ($(CURRENT_BUILD_TYPE), gapps)
+# Use Gapps
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+endif
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -39,11 +46,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # CarbonRom Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carbon.maintainer="Rcstar6696"
+    ro.legion.maintainer="RonaldSantos"
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := carbon_wayne
+PRODUCT_NAME := legion_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
