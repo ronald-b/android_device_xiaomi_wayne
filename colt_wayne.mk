@@ -34,10 +34,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
 
-# Mainatiner Prop
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.colt.maintainer="Markdarkness"
-
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
@@ -46,3 +42,4 @@ PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
 TARGET_BOOT_ANIMATION_RES := 1080x2160
 COLT_BUILD_TYPE := Official
+COLT_DEVICE_MAINTAINER := Markdarkness🐺
