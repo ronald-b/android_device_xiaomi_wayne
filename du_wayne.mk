@@ -36,7 +36,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
 
-# CarbonRom Maintainer
+# CorvusRom Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.du.maintainer=Ronald
 
@@ -47,4 +47,3 @@ PRODUCT_NAME := du_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
 
-DU_BUILD_TYPE := OFFICIAL
