@@ -24,8 +24,8 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit some common Colt stuff.
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+# Inherit some common statix stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -37,9 +37,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := colt_wayne
+PRODUCT_NAME := statix_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
 TARGET_BOOT_ANIMATION_RES := 1080x2160
-COLT_BUILD_TYPE := Official
-COLT_DEVICE_MAINTAINER := Markdarkness🐺

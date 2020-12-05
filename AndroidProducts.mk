@@ -23,9 +23,9 @@
 
 # inherit MI 6X lineage device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_wayne.mk
+    $(LOCAL_DIR)/statix_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    colt_wayne-eng \
-    colt_wayne-userdebug \
-		colt_wayne-user
+    statix_wayne-eng \
+    statix_wayne-userdebug \
+		statix_wayne-user

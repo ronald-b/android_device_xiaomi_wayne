@@ -874,3 +874,24 @@ vendor/etc/thermal-engine-performance.conf
 vendor/etc/thermal-engine-map.conf
 vendor/etc/thermal-engine-default.conf
 vendor/etc/thermal-engine.conf
+
+# Utils (Display blobs)
+vendor/etc/ad_calib.cfg
+vendor/lib/libjson.so
+vendor/lib/libqdMetaData.so
+vendor/lib/libqdutils.so
+vendor/lib/libqservice.so
+vendor/lib/libsdmutils.so
+vendor/lib/libstagefrighthw.so
+vendor/lib/libtime_genoff.so
+vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/vendor.display.config@1.0.so
+vendor/lib64/libjson.so
+vendor/lib64/libqdMetaData.so
+vendor/lib64/libqdutils.so
+vendor/lib64/libqservice.so
+vendor/lib64/libsdmutils.so
+vendor/lib64/libstagefrighthw.so
+vendor/lib64/libtime_genoff.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/vendor.display.config@1.0.so
