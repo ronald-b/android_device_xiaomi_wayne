@@ -23,7 +23,7 @@
 
 # inherit MI 6X lineage device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_wayne.mk
+    $(LOCAL_DIR)/corvus_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_wayne-userdebug
+    corvus_wayne-userdebug
