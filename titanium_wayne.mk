@@ -25,10 +25,11 @@
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
 # Inherit Lineage product configuration
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+$(call inherit-product, vendor/titanium/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-USE_GAPPS=true
+WITH_GAPPS=true
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -40,15 +41,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := corvus_wayne
+PRODUCT_NAME := titanium_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
 
-# OFFICIAL Corvus Build
+# OFFICIAL Titanium Build
 
-RAVEN_LAIR=Official
+TITANIUM_BUILD_TYPE := OFFICIAL
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.corvus.maintainer=RonaldSantos
+    ro.titanium.maintainer=RonaldSantos
 
