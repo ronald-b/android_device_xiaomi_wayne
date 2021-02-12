@@ -23,9 +23,9 @@
 
 # inherit device config for Project-Awaken
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_wayne.mk
+    $(LOCAL_DIR)/dot_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_wayne-eng \
-    awaken_wayne-userdebug \
-    awaken_wayne-user
+    dot_wayne-eng \
+    dot_wayne-userdebug \
+    dot_wayne-user
